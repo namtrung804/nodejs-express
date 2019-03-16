@@ -8,11 +8,10 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && apt-get install -y yarn && yarn -v
 
-RUN npm install -g bower gulp svgo
+RUN npm install -g gulp svgo
 
 RUN npm install express-generator -g && npm install -g sequelize-cli && npm install -g node-gyp
 
-EXPOSE 3000
+EXPOSE 8000-9999
 
 WORKDIR /app
-CMD [ "npm", "start" ]
