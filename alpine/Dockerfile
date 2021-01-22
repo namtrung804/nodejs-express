@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:12-alpine
 
 MAINTAINER Nam Trung <namtrung804@gmail.com>
 
