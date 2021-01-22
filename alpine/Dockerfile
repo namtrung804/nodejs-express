@@ -2,6 +2,7 @@ FROM node:12-alpine
 
 MAINTAINER Nam Trung <namtrung804@gmail.com>
 
+RUN mkdir -p /app
 # Global install yarn package manager
 RUN apk add yarn && yarn -v
 # Install package create thumbnail for video
