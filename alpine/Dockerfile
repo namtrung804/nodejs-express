@@ -1,9 +1,9 @@
-FROM node:alpine
+FROM node:lts-alpine
 
 MAINTAINER Nam Trung <namtrung804@gmail.com>
 
 # Global install yarn package manager
-RUN apk add yarn && yarn -v
+RUN apk add yarn bash && yarn -v
 # Install package create thumbnail for video
 RUN apk add ffmpeg
 #RUN apk add frei0r-plugins
